@@ -1,0 +1,255 @@
+body {
+    background: rgb(37, 35, 35);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+/* .......................................... Header Styles ................................ */
+
+.header_Container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.nav_Container {
+    width: 100%;
+    background: #000;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.left_Nav {
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.nav_Logo {
+    color: whitesmoke;
+    width: 50%;
+    margin-left: 50px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+#nav_Logo {
+    color: orange;
+    font-weight: normal;
+}
+
+.right_Nav {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.list_Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.nav_List {
+    list-style: none;
+
+}
+
+.nav_List a {
+    text-decoration: none;
+    color: rgb(248, 240, 226);
+    font-weight: 300;
+    font-size: 16px;
+}
+
+/* .......................................... Header Styles ................................ */
+.banner_Container {
+    max-width: 1170px;
+    height: calc(100vh - 67px);
+    margin: auto;
+    background-image: url(./images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.dark_Bg {
+    max-width: 1170px;
+    height: calc(100vh - 67px);
+    opacity: 80%;
+    background: #000;
+    z-index: 1;
+}
+
+.banner_Content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+
+}
+
+.left_Banner {
+    width: 90%;
+    text-align: left;
+}
+
+.banner_Title {
+    font-size: 70px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-left: 50px;
+
+}
+
+.sub_Title {
+    color: white;
+    font-size: 30px;    
+    margin: 10px 50px 10px;
+    line-height: 40px;
+
+}
+
+.banner_Detail {
+    color: white;
+    font-size: 17px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.banner_Btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background: transparent;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    border-radius: 2px;
+    margin-left: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* Form styles */
+.right_Banner {
+    width: 60%;
+    margin: auto;
+}
+
+.form {
+    width: 320px;
+    background-color: #15172b;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 58px;
+    padding-top: 20px;
+}
+
+.subtitle {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 0px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.unique_Color {
+    color: rgb(255, 136, 0);
+}
+
+.input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+}
+
+.ic1 {
+    margin-top: 40px;
+}
+
+.ic2 {
+    margin-top: 20px;
+}
+
+.input {
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+}
+
+.cut {
+    background-color: #15172b;
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 50px;
+}
+
+.cut-short {
+    width: 80px;
+}
+
+.input:focus~.cut,
+.input:not(:placeholder-shown)~.cut {
+    transform: translateY(8px);
+}
+
+.placeholder {
+    color: #65657b;
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+}
+
+.input:focus~.placeholder,
+.input:not(:placeholder-shown)~.placeholder {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+
+.input:not(:placeholder-shown)~.placeholder {
+    color: #808097;
+}
+
+.input:focus~.placeholder {
+    color: #dc2f55;
+}
+
+.submit {
+    background-color: rgb(252, 136, 4);
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    height: 50px;
+    margin-top: 38px;
+    outline: 0;
+    text-align: center;
+    width: 100%;
+}
